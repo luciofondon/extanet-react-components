@@ -1,0 +1,8 @@
+version: '3'
+services:
+  storybook:
+    ports:
+      - "6006:6006"
+    build: 
+      dockerfile: ./.build/docker/Dockerfile
+      context: ../../

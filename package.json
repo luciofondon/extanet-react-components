@@ -1,0 +1,55 @@
+{
+      "name": "ctm-extranet-react-components",
+      "version": "1.0.0",
+      "description": "Componentes React para la app de Extranet",
+      "main": "src/index.js",
+      "scripts": {
+            "build:dev": "start-storybook -p 6006",
+            "build:prod": "build-storybook --output-dir=./dist",
+            "start": "npm run build:dev",
+            "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{js,jsx,json}\"",
+            "prettier:fix": "prettier --config .prettierrc --write \"src/**/*.{js,jsx,json}\"",
+            "lint:check": "eslint \"src/**/*.{jsx,js}\"",
+            "lint:fix": "eslint --fix \"src/**/*.{jsx,js}\"",
+            "docker": "docker-compose -f ./.build/docker/docker-compose.yml up --build"
+      },
+      "author": "Lucio David Fondon Terron <luciofondonterron@gmail.com>",
+      "license": "ISC",
+      "keywords": [
+            "ctm",
+            "extranet"
+      ],
+      "devDependencies": {
+            "@babel/core": "7.8.4",
+            "@storybook/addon-a11y": "5.3.10",
+            "@storybook/addon-actions": "5.3.10",
+            "@storybook/addon-console": "1.2.1",
+            "@storybook/addon-knobs": "5.3.10",
+            "@storybook/addon-storysource": "5.3.10",
+            "@storybook/addon-viewport": "5.3.10",
+            "@storybook/addons": "5.3.10",
+            "@storybook/react": "5.3.10",
+            "babel-loader": "8.0.6",
+            "eslint": "6.8.0",
+            "eslint-config-airbnb": "18.0.1",
+            "eslint-config-prettier": "6.10.0",
+            "eslint-plugin-import": "2.20.1",
+            "eslint-plugin-jsx-a11y": "6.2.3",
+            "eslint-plugin-prettier": "3.1.2",
+            "eslint-plugin-react": "7.18.3",
+            "eslint-plugin-react-hooks": "2.3.0",
+            "prettier": "1.19.1",
+            "storybook-react-router": "1.0.8",
+            "url-loader": "3.0.0"
+      },
+      "dependencies": {
+            "@material-ui/core": "^4.9.1",
+            "@material-ui/icons": "^4.9.1",
+            "primeicons": "2.0.0",
+            "primereact": "3.4.0",
+            "prop-types": "15.7.2",
+            "react": "16.12.0",
+            "react-router-dom": "5.1.2",
+            "styled-components": "^5.0.0"
+      }
+}
